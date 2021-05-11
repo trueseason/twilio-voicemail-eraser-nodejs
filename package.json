@@ -1,0 +1,12 @@
+{
+  "name": "voicemail-archiver",
+  "version": "0.1.0",
+  "dependencies": {
+    "aws-parameterstore-reader": "^0.1.1",
+    "axios": "^0.21.1",
+    "moment-timezone": "^0.5.33"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.904.0"
+  }
+}

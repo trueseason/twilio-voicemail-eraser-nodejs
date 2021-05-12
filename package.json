@@ -1,6 +1,6 @@
 {
     "name": "twilio-voicemail-eraser",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A helper lib which could delete Twilio voicemails based on the specified target date and retention days.",
     "main": "index.js",
     "repository": {

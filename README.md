@@ -3,8 +3,8 @@
 This repository is the Node.js version of the twilio-voicemail-eraser, ported from the Python lib which could delete Twilio voicemails based on the specified target date and retention days.
 
 ## dependencies
-axios 
-moment-timezone 
+axios  
+moment-timezone  
 proxy-agent
 
 ## Usage

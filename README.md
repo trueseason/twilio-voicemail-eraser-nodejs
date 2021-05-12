@@ -1,21 +1,34 @@
 # twilio-voicemail-eraser
 
-This repository is the Node.js version of the twilio-voicemail-eraser, ported from the Python lib which could delete Twilio voicemails based on the specified date and retention days.
+This repository is the Node.js version of the twilio-voicemail-eraser, ported from the Python lib which could delete Twilio voicemails based on the specified target date and retention days.
 
 ## dependencies
 axios 
-moment-timezone
+moment-timezone 
+proxy-agent
 
 ## Usage
 
 ```javascript
-const vma = require('../handler.js');
+const vmeraser = require('twilio-voicemail-eraser');
 
-process.env.RetentionDays = 90;
-process.env.ApplicationId = 'config-root-path';
-process.env.Environment = 'Test';
+let options = {
+    //mandatory options:
+    twilioAccountId: 'twilioAccountId',
+    twilioAuthToken: 'twilioAuthToken',
+    //optional options (default):
+    retentionDays: 30,
+    invocationPageSize: 100,
+    invocationAsyncLimit: 20,
+    invocationRecordLimit: 1000,
+    fetchVoicemail: 'false'
+}
+
+let preAction = (voicemailInfo, callInfo, voiceMessage) => { console.log('Pre-Action') };
+let postAction = (voicemailInfo, callInfo, voiceMessage) => { console.log('Post-Action') };
 
 async function sampleFunction() {
-    return await vma.archiveVoicemails();
+    let vme = new vmeraser(options);
+    return await vme.eraseVoicemails('2020-01-01', preAction, postAction);
 }
 ```

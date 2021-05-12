@@ -1,9 +1,28 @@
 {
-  "name": "voicemail-eraser",
-  "version": "0.1.0",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "moment-timezone": "^0.5.33"
-  },
-  "devDependencies": {}
+    "name": "twilio-voicemail-eraser",
+    "version": "0.1.1",
+    "description": "A helper lib which could delete Twilio voicemails based on the specified target date and retention days.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/trueseason/twilio-voicemail-eraser-nodejs.git"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "moment-timezone": "^0.5.33",
+        "proxy-agent": "^4.0.1"
+    },
+    "devDependencies": {},
+    "bugs": {
+        "url": "https://github.com/trueseason/twilio-voicemail-eraser-nodejs/issues"
+    },
+    "homepage": "https://github.com/trueseason/twilio-voicemail-eraser-nodejs#readme",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "John Xu",
+    "license": "MIT"
 }

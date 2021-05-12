@@ -21,7 +21,7 @@ let options = {
     invocationPageSize: 100,
     invocationAsyncLimit: 20,
     invocationRecordLimit: 1000,
-    fetchVoicemail: 'false'
+    fetchVoicemail: false
 }
 
 let preAction = (voicemailInfo, callInfo, voiceMessage) => { console.log('Pre-Action') };

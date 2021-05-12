@@ -1,0 +1,13 @@
+**/.*
+*.iml
+*.map
+coverage/
+examples/
+node_modules/
+src/
+typings/
+sandbox/
+test/
+tsconfig.json
+Gruntfile.js
+webpack.*.js

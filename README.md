@@ -1,11 +1,9 @@
-# twilio-voicemail-archiver
+# twilio-voicemail-eraser
 
-This repository is a testing sample to archive Twilio voicemail to AWS S3 bucket and delete the original items from Twilio, based on current date and the specified retention days.
+This repository is the Node.js version of the twilio-voicemail-eraser, ported from the Python lib which could delete Twilio voicemails based on the specified date and retention days.
 
 ## dependencies
-aws-sdk
-aws-parameterstore-reader
-axios
+axios 
 moment-timezone
 
 ## Usage

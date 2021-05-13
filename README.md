@@ -21,6 +21,7 @@ let options = {
     invocationPageSize: 100,
     invocationAsyncLimit: 20,
     invocationRecordLimit: 1000,
+    errorsLimit: 100,
     fetchVoicemail: false
 }
 
